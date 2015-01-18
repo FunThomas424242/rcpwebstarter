@@ -31,7 +31,7 @@ import javax.swing.SwingUtilities;
  * 
  * @author Daniel Mendler <mendler@imedic.de>
  */
-class UnpackThread extends Thread {
+public class UnpackThread extends Thread {
 	private List<File> fileList;
 
 	private File destDir;

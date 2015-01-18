@@ -5,6 +5,7 @@
 	<artifactId>rcpwebstarter</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<name>RCP Webstarter</name>
+	<packaging>jar</packaging>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,8 +23,8 @@
 			<artifactId>jnlp-api</artifactId>
 			<version>7.0</version>
 			<scope>system</scope>
-			<systemPath>${java.home}/lib/javaws.jar</systemPath>
-		</dependency>
+			<systemPath>${basedir}/src/main/lib/javaws.jar</systemPath>
+		</dependency>	
 	</dependencies>
 
 	<build>
@@ -36,8 +37,44 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>false</addClasspath>
+							<mainClass>com.gh.funthomas424242s.rcpwebstarter.RCPWebstarter</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jarsigner-plugin</artifactId>
+				<version>1.3.2</version>
+				<executions>
+					<execution>
+						<id>sign</id>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<keystore>src/main/config/test.keystore</keystore>
+					<alias>test</alias>
+					<storepass>Das ist ein TestKennwort</storepass>
+					<keypass>Das ist ein TestKennwort</keypass>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
+
+
 	<url>https://github.com/FunThomas424242/rcpwebstarter</url>
 	<description>A webstarter for rcp applications without hosting at a running webserver.</description>
 	<scm>

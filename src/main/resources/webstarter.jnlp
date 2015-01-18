@@ -1,21 +1,19 @@
-<!-- WebRCP-Example 1.0 RC1 (03.12.2013 / 09:30.51) -->
-
-
+<!-- RCP Webstarter Beispiel -->
 
 
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <jnlp
 	spec="1.0+"
-	codebase="http://localhost:8080/webrcp-example"
-	href="/webrcp-example/tutorial.jsp">
-	<application-desc></application-desc>
+	codebase="file:///${basedir}"
+	href="/webstarter.jnlp">
+	<application-desc>RCP Webstarter Beispiel</application-desc>
 
 	<information>
-		<title>WebRCP-Example</title>
-		<vendor>Example Inc</vendor>
-		<description>This is a webrcp example</description>
-		<homepage href="http://localhost:8080/webrcp-example/index.html"/>
-		<icon href="icon.jpeg"/>
+		<title>RCP Webstarter Beispiel</title>
+		<vendor>Beispielfirma</vendor>
+		<description>Das ist ein RCP Webstarter Beispiel</description>
+		<homepage href="file:///${basedir}/index.html"/>
+		<icon href="src/main/webapp/icon.jpeg"/>
 		<offline-allowed/>
 	</information>
 
@@ -25,11 +23,11 @@
 
   <resources>
   		<j2se version="1.5+" />
-		<jar href="webrcp.jar" />
+		<jar href="target/rcpwebstarter-1.0.0-SNAPSHOT.jar" />
  		<property name="jnlp.WebRCP.appName" value="WebRCP-Example"/>
 	   	<property name="jnlp.WebRCP.appVersion" value="1.0.0"/>
 	   	<property name="jnlp.WebRCP.launchProduct" value="rcp.example.product"/>
-	    <property name="jnlp.WebRCP.archives" value="rcp.example_1.0.0"/>
+	    <property name="jnlp.WebRCP.archives" value="http://thomas-michel.info/download/rcp.example_1.0.0.zip"/>
 	   	<property name="jnlp.WebRCP.sysArchives" value=""/>
 	   	<property name="jnlp.WebRCP.executable" value="eclipse"/>
 	   	<property name="jnlp.WebRCP.singleInstance" value="false"/>

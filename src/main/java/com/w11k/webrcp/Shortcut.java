@@ -908,7 +908,7 @@ public class Shortcut
 		return s;
 	}
 
-	byte[] getBytes()
+	public byte[] getBytes()
 	{
 		byte[] buff = null;
 		int size = 0;

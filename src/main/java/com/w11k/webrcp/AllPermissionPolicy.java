@@ -26,7 +26,7 @@ import java.security.ProtectionDomain;
  * 
  * @author Daniel Mendler <mendler@imedic.de>
  */
-class AllPermissionPolicy extends Policy {
+public class AllPermissionPolicy extends Policy {
 	public PermissionCollection getPermissions(CodeSource code) {
 		Permissions permissions = new Permissions();
 		permissions.add(new AllPermission());
