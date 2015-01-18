@@ -123,10 +123,10 @@ public class RCPWebstarter implements Runnable {
 
 			final String message = archiveURL == null ? "null" : archiveURL
 					.toString();
-			LOGGER.printInfoBox("URL " + element, message);
+			LOGGER.printDebugInfoBox("URL " + element, message);
 
 			final String fileName = archiveURL.getFile();
-			LOGGER.printInfoBox("DestFile1" + element, fileName);
+			LOGGER.printDebugInfoBox("DestFile1" + element, fileName);
 			final File destFile = new File(tempDir, fileName);
 
 			if (!destFile.exists() || override) {
@@ -231,8 +231,8 @@ public class RCPWebstarter implements Runnable {
 			final String launcherClassName = webstarterProperties
 					.getLauncherClass();
 			// TODO
-			LOGGER.printInfoBox("Launcher Jar", path);
-			LOGGER.printInfoBox("Launcher Class", launcherClassName);
+			LOGGER.printDebugInfoBox("Launcher Jar", path);
+			LOGGER.printDebugInfoBox("Launcher Class", launcherClassName);
 
 			urlClassLoader = new URLClassLoader(new URL[] { new URL(path) });
 			Class<?> launcher = urlClassLoader.loadClass(launcherClassName);
@@ -252,7 +252,7 @@ public class RCPWebstarter implements Runnable {
 					+ "/workspace/ -user " + url + "/workspace/ -nl "
 					+ Locale.getDefault() + arg;
 
-			LOGGER.printInfoBox("Launcher Command", exeCommand == null ? "null"
+			LOGGER.printDebugInfoBox("Launcher Command", exeCommand == null ? "null"
 					: exeCommand);
 
 			launcherMain.invoke(null, exeCommand);

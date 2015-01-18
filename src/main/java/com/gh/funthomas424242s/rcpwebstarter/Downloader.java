@@ -34,7 +34,7 @@ public class Downloader {
 		try {
 
 			destFile.getParentFile().mkdirs();
-			LOGGER.printInfoBox("DestFile2 ", destFile.getAbsolutePath());
+			LOGGER.printDebugInfoBox("DestFile2 ", destFile.getAbsolutePath());
 			OutputStream out = new FileOutputStream(destFile);
 
 			URLConnection conn = url.openConnection();

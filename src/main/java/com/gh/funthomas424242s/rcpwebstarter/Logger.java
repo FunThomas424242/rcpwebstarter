@@ -9,6 +9,8 @@ import javax.swing.Timer;
 
 public class Logger<T> {
 
+	final static boolean DEBUG_MODE=false;
+	
 	final Class<T> callerClass;
 
 	public Logger(final Class<T> callerClass) {
@@ -22,7 +24,7 @@ public class Logger<T> {
 
 		return pm;
 	}
-	
+
 	/*
 	 * Simulate progress by showing a faked progress monitor
 	 */
@@ -44,9 +46,11 @@ public class Logger<T> {
 		timer.start();
 	}
 
-	public void printInfoBox(String title, String message) {
-		JOptionPane.showMessageDialog(null, message, title,
-				JOptionPane.ERROR_MESSAGE);
+	public void printDebugInfoBox(String title, String message) {
+		if (DEBUG_MODE) {
+			JOptionPane.showMessageDialog(null, message, title,
+					JOptionPane.ERROR_MESSAGE);
+		}
 	}
 
 	public void beendeMitFehler(String title, String message) {
