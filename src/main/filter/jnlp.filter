@@ -1,0 +1,20 @@
+# anwendungs eigenschaften
+codebase.url        = file:${basedir}/
+jnlp.filename		= rcpwebstarter.jnlp
+jnlp.webstarter.jar = target/rcpwebstarter-1.0.0-SNAPSHOT.jar
+app.name            = RCP Webstarter Beispiel
+app.id				= rcpwebstarter.beispiel
+app.version			= 1.0.0-SNAPSHOT
+app.vendor          = Beispiel Firma
+app.description     = Das ist ein RCP Webstarter Beispiel
+app.url             = file:${basedir}/src/main/webapp/index.html
+app.icon            = src/main/webapp/icon.jpeg
+app.launch.product  = rcp.example.product
+app.archives        = http://thomas-michel.info/download/rcp.example_1.0.0.zip
+app.sys.archives    = 
+app.executable      = eclipse
+launcher.jar = eclipse/plugins/org.eclipse.equinox.launcher_1.3.0.v20130327-1440.jar
+launcher.class = org.eclipse.equinox.launcher.Main
+
+# more custom properties
+#jnlp.custom.xxx
