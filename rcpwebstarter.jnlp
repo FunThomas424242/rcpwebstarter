@@ -13,7 +13,7 @@
 		<vendor>FunThomas424242</vendor>
 		<description>Das ist ein RCP Webstarter Beispiel</description>
 		<homepage href="https://github.com/FunThomas424242/rcp.example/"/>
-		<icon href="https://upload.wikimedia.org/wikipedia/commons/2/26/Java.png"/>
+		<icon href="https://upload.wikimedia.org/wikipedia/commons/6/6c/Jws256x256_1.gif"/>
 		<offline-allowed/>
 	</information>
 
