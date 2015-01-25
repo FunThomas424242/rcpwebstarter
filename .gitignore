@@ -15,4 +15,3 @@ hs_err_pid*
 /install-tomcat.pp
 /undeploy-from-tomcat.pp
 /.settings
-/rcpwebstarter.jnlp
