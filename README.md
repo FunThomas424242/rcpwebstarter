@@ -36,7 +36,7 @@ geklickt werden.
 Alles was zu tun ist sind 3 Schritte:
 
 1. RCP Anwendung erstellen und zum Zip Archiv zusammen packen und irgendwo im Netz ablegen.
-** Beim Export der RCP Anwendung aus Eclipse muss das root Verzeichnis *eclipse* genannt werden.
+   Beim Export der RCP Anwendung aus Eclipse muss das root Verzeichnis *eclipse* genannt werden.
 
 2. Die JNLP Datei vom Starter downloaden und den Wert des Property *jnlp.WebRCP.archives* auf den URL zum Zip Archiv der RCP Anwendung setzen.
 
