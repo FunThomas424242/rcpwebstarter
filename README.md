@@ -28,7 +28,7 @@ bitte auf der Kommandozeile mittels *jcontrol* starten und da wie im nachfolgend
 
 # Test 
 Um das Webstarter Beispiel zu testen kann nach Aufnahme der Security Ausnahme einfach auf die
-[rcpwebstarter.jnlp](https://bintray.com/funthomas424242/eclipse-features/rcpwebstarter/1.0.0/rcpwebstarter.jnlp)
+[rcpwebstarter.jnlp](https://bintray.com/artifact/download/funthomas424242/eclipse-features/rcpwebstarter/1.0.0/rcpwebstarter.jnlp)
 geklickt werden.
 
 # Konfiguration für die eigene RCP Anwendung
