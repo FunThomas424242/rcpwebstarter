@@ -1,2 +1,2 @@
 # rcpwebstarter
-A webstarter for rcp applications without hosting at a running webserver.
+A webstarter for rcp applications without hosting at a running servlet container.
