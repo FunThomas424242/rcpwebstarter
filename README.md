@@ -5,12 +5,12 @@ Ein Webstarter für RCP Anwendungen die irgendwo im Netz als zip File abliegen u
 [![Download](https://api.bintray.com/packages/funthomas424242/eclipse-features/rcpwebstarter/images/download.svg)](https://bintray.com/funthomas424242/eclipse-features/rcpwebstarter/_latestVersion)
 
 Letzter Shapshot:
-[![Build Status](https://travis-ci.org/FunThomas424242/rcpwebstarter.svg?branch=master)](https://travis-ci.org/FunThomas424242/rcpwebstarter)
+[![Build Status](https://travis-ci.org/Huluvu424242/rcpwebstarter.svg?branch=master)](https://travis-ci.org/Huluvu424242/rcpwebstarter)
 
 Das Projekt basiert auf den Arbeiten folgender Projekte:
 * http://sourceforge.net/projects/webrcp/
 * https://github.com/w11k/webrcp
-* https://github.com/FunThomas424242/webrcp.example
+* https://github.com/Huluvu424242/webrcp.example
 
 
 # Benutzung
