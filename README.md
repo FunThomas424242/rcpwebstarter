@@ -14,6 +14,10 @@ Das Projekt basiert auf den Arbeiten folgender Projekte:
 
 
 # Benutzung
+## Voraussetzung
+Auf dem Rechner muss Java installiert sein, sonst kann der Starter nicht funktionieren. 
+
+## Vorgehen
 Der Webstarter ist selbst signiert. Das hat zur Folge, dass zum einen das Zertifikat in 3 Monaten ablaufen wird als auch das man für Webstart
 eine Ausnahme für den Download URL aufnehmen muss. Beides ist unschön aber da ich nur ein einfacher Open Source Entwickler bin und keine Firma
 fällt es mir schwer ein Zertifikat zu bekommen (Kostet vermutlich Geld und gilt vermutlich nur für einen URL und letzterer ändert sich bei mir recht
